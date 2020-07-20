@@ -1,4 +1,4 @@
-"""p2 URL Configuration
+"""p3 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -15,12 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from p2 import views
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.index,name='index'),
-    path('home',views.home,name='home'),
-    path('html_demo1',views.html_demo1,name="html_demo1"),
-    path('html_demo2',views.html_demo2,name="html_demo2"),  
+    path('second/',views.second,name="second")
+
 ]
